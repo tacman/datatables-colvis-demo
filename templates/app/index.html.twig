@@ -1,0 +1,49 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello AppController!{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs5/jszip-2.5.0/dt-1.13.1/b-2.3.3/b-colvis-2.3.3/b-html5-2.3.3/cr-1.6.1/datatables.min.css"/>
+
+{% endblock %}
+{% block body %}
+
+    {% set _sc = 'datatable' %}
+    <div {{ stimulus_controller(_sc) }}>
+
+<table id="example"
+       {{ stimulus_target(_sc, 'table') }}
+       class="display responsive nowrap" style="width:100%">
+    <thead>
+    <tr>
+        <th>First name</th>
+        <th>Last name</th>
+        <th>Position</th>
+        <th>Office</th>
+        <th>Age</th>
+        <th>Start date</th>
+        <th>Salary</th>
+        <th>Extn.</th>
+        <th>E-mail</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>Tiger</td>
+        <td>Nixon</td>
+        <td>System Architect</td>
+        <td>Edinburgh</td>
+        <td>61</td>
+        <td>2011-04-25</td>
+        <td>$320,800</td>
+        <td>5421</td>
+        <td>t.nixon@datatables.net</td>
+    </tr>
+    </tbody>
+</table>
+
+    </div>
+
+{% endblock %}
