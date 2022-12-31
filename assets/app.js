@@ -11,5 +11,5 @@ import './styles/app.scss';
 // start the Stimulus application
 import './bootstrap';
 
-import 'datatables.net-bs5';
-import 'datatables.net-buttons-bs5';
+// import 'datatables.net-bs5';
+// import 'datatables.net-buttons-bs5';
