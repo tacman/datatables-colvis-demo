@@ -2185,6 +2185,40 @@ datatables.net-responsive@>=2.3.0:
     datatables.net ">=1.12.1"
     jquery ">=1.7"
 
+datatables.net-scroller-bs5@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/datatables.net-scroller-bs5/-/datatables.net-scroller-bs5-2.1.0.tgz#6802b60681cb89e24c04624d87b5a6b03665c0f0"
+  integrity sha512-DtS0KrGuGgnw5fusGZVtxD6nG6mcsfbKxpbhFfjqo26pSJy/C45E5gRv+mjluVb9iUwSCXpUbHD8Mggn5zlm4A==
+  dependencies:
+    datatables.net-bs5 ">=1.12.1"
+    datatables.net-scroller ">=2.0.7"
+    jquery ">=1.7"
+
+datatables.net-scroller@>=2.0.7:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/datatables.net-scroller/-/datatables.net-scroller-2.1.0.tgz#0a96896bfa6f5f4f4266e41b652194cb9fdf2414"
+  integrity sha512-B/MxP8YPcFtoa1cexvlcK0PXQdzy6tz+HhQlyjNpRCoRc/8ZM5VcZg+ecYfP/pRBBXZORgkOJjWYkIdoChhE0w==
+  dependencies:
+    datatables.net ">=1.12.1"
+    jquery ">=1.7"
+
+datatables.net-select-bs5@^1.5.0:
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/datatables.net-select-bs5/-/datatables.net-select-bs5-1.5.0.tgz#b059461fb862888a84920544109bd7b1a25e2c4b"
+  integrity sha512-/eumznIBBDtjSWZRqesTKOUHuaE7TVK+7kqeuj39em7Dg6J6UaqH2LsdlWaLGF6bHK0jEHAkZeZN/aezkfb7tQ==
+  dependencies:
+    datatables.net-bs5 ">=1.12.1"
+    datatables.net-select ">=1.4.0"
+    jquery ">=1.7"
+
+datatables.net-select@>=1.4.0:
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/datatables.net-select/-/datatables.net-select-1.5.0.tgz#e118438ad98e4857060d6dd66cb0fab215a54fda"
+  integrity sha512-PVYcX5phmu77r3a6miTyS1zF03cgX7Mx+BXH4wCJzZW+UHe2Xz9DAHgxvLQfE7j2M8LG45Ww7RxBhnkFKk1t7A==
+  dependencies:
+    datatables.net ">=1.12.1"
+    jquery ">=1.7"
+
 datatables.net@>=1.12.1:
   version "1.13.1"
   resolved "https://registry.yarnpkg.com/datatables.net/-/datatables.net-1.13.1.tgz#199f7cb63f4536c135e161f95254212835a1c130"

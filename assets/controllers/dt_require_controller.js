@@ -1,12 +1,13 @@
 import { Controller } from '@hotwired/stimulus';
-import DataTables from "datatables.net-bs5";
-import('datatables.net-select-bs5');
-import('datatables.net-responsive-bs5');
-import('datatables.net-buttons-bs5');
-import('datatables.net-scroller-bs5');
-import('datatables.net-buttons/js/buttons.colVis.min');
 
-// /* stimulusFetch: 'lazy' */
+require("datatables.net-bs5");
+require('datatables.net-select-bs5');
+require('datatables.net-responsive-bs5');
+require('datatables.net-buttons-bs5');
+require('datatables.net-scroller-bs5');
+require('datatables.net-buttons/js/buttons.colVis.min');
+
+/* stimulusFetch: 'lazy' */
 export default class extends Controller {
     static targets = ['table']
     static values = {
@@ -25,16 +26,16 @@ export default class extends Controller {
         let setup  = {
             dom: 'Bfrtip',
             select: true,
-            // scrollY:        300,
-            // scrollCollapse: true,
+            scrollY:        300,
+            scrollCollapse: true,
             scroller:       true,
             buttons: [
                 'colvis',
                 'copy'
             ]
         };
-        // let dt = $(el).DataTable(setup);
-        let dt2 = new DataTables(el, setup);
+        let dt = $(el).DataTable(setup);
+        // let dt2 = new DataTables(el, setup);
     }
 
     // ...
